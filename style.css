@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" );
+@import url("https://fonts.googleapis.com/css2?family=Ephesis&family=Rampart+One&display=swap");
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background: #000000;
+    
+
+}
+p{
+    font-size: 5px;
+    line-height: 5px;
+    background: url(img/dottedpic.jpg);
+    background-attachment: fixed;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255,255,255,0.1);
+}
+
+h3{
+    font-size: 1em;
+    font-family: 'Ephesis', cursive;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    animation: anim 3s linear infinite;
+    
+}
+@keyframes anim{
+    0%{
+        font-size: 2em;
+        color:#fff ;
+    }
+    50%{
+        font-size: 4em;
+        color: red;
+
+    }
+    100%{
+        font-size:6em ;
+        color: green;
+        
+        
+    }
+}
+@media screen and (max-width:700px) {
+    @keyframes anim{
+        0%{
+            font-size: 1em;
+            color: #fff;
+            
+        }
+        50%{
+            font-size: 2rem;
+            color: red;
+        }
+        100%{
+            font-size:3em ;
+            color: green;
+            
+        }
+    }
+    
+    
+}
